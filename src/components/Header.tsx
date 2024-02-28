@@ -1,5 +1,4 @@
 import React from 'react'
-import 'boxicons'
 
 const Header = () => {
   return (
