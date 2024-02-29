@@ -1,12 +1,12 @@
 const Cart = () => {
   return (
-    <div className="fixed bg-slate-200 z-50 w-[420px] shadow-[0px_-2px_0px_4px_rgba(38, 38, 38, 0.1)] h-full top-0 right-0 [transition:.4s] px-8 py-[3,5rem]">
+    <div className="fixed bg-slate-200 z-50 w-[420px] shadow-[0px_-2px_0px_4px_rgba(38, 38, 38, 0.1)] h-full top-0 -right-full [transition:.4s] px-8 py-[3,5rem]">
       <i className="bx bx-x text-3xl text-slate-800 absolute top-5 right-4 cursor-pointer"></i>
-      <h2 className="text-2xl text-center mb-12">My Cart</h2>
+      <h2 className="text-2xl text-center mb-12 pt-14">My Cart</h2>
       <div className="grid gap-y-6">
         <article className="flex items-center gap-x-4">
           <div className="bg-white px-5 py-[.75rem] flex items-center">
-            <img src="/public/img/cart-1.png" alt="" className="w-[85px]" />
+            <img src="/img/cart-1.png" alt="" className="w-[85px]" />
           </div>
           <div>
             <h3 className="text-base mb-2">Windbreaker</h3>
@@ -17,7 +17,49 @@ const Cart = () => {
                   <i className="bx bx-minus"></i>
                 </span>
                 <span>1</span>
-                <span>
+                <span className="inline-flex p-1 bg-white cursor-pointer">
+                  <i className="bx bx-plus"></i>
+                </span>
+              </div>
+              <i className="bx bx-trash-alt text-lg text-red-600 cursor-pointer"></i>
+            </div>
+          </div>
+        </article>
+        <article className="flex items-center gap-x-4">
+          <div className="bg-white px-5 py-[.75rem] flex items-center">
+            <img src="/img/cart-1.png" alt="" className="w-[85px]" />
+          </div>
+          <div>
+            <h3 className="text-base mb-2">Windbreaker</h3>
+            <span className="block text-sm text-red-600 mb-6">12$</span>
+            <div className="flex items-center gap-x-12">
+              <div className="flex items-center gap-x-4">
+                <span className="inline-flex p-1 bg-white cursor-pointer">
+                  <i className="bx bx-minus"></i>
+                </span>
+                <span>1</span>
+                <span className="inline-flex p-1 bg-white cursor-pointer">
+                  <i className="bx bx-plus"></i>
+                </span>
+              </div>
+              <i className="bx bx-trash-alt text-lg text-red-600 cursor-pointer"></i>
+            </div>
+          </div>
+        </article>
+        <article className="flex items-center gap-x-4">
+          <div className="bg-white px-5 py-[.75rem] flex items-center">
+            <img src="/img/cart-1.png" alt="" className="w-[85px]" />
+          </div>
+          <div>
+            <h3 className="text-base mb-2">Windbreaker</h3>
+            <span className="block text-sm text-red-600 mb-6">12$</span>
+            <div className="flex items-center gap-x-12">
+              <div className="flex items-center gap-x-4">
+                <span className="inline-flex p-1 bg-white cursor-pointer">
+                  <i className="bx bx-minus"></i>
+                </span>
+                <span>1</span>
+                <span className="inline-flex p-1 bg-white cursor-pointer">
                   <i className="bx bx-plus"></i>
                 </span>
               </div>
