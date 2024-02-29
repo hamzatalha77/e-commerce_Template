@@ -1,15 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap');
 
 :root {
   --header-height: 3.5rem;
+
   --title-color: hsl(250, 8%, 15%);
   --text-color: hsl(250, 8%, 35%);
   --body-color: hsl(250, 60%, 98%);
   --container-color: #fff;
   --shadow: hsla(0, 0%, 15%, 0.1);
+  --scroll-bar-color: hsl(250, 12%, 90%);
+  --scroll-thumb-color: hsl(250, 12%, 80%);
 
   --body-font: 'Poppins', sans-serif;
   --biggest-font-size: 4rem;
@@ -30,6 +34,7 @@
   --mb-2: 2rem;
   --mb-2-5: 2.5rem;
   --mb-3: 3rem;
+
   --z-tooltip: 10;
   --z-fixed: 100;
 }
@@ -41,7 +46,7 @@
     --h2-font-size: 1.25rem;
     --h3-font-size: 1rem;
     --normal-font-size: 0.938rem;
-    --small-font-size: 813rem;
+    --small-font-size: 0.813rem;
     --smaller-font-size: 0.75rem;
   }
 }
@@ -55,22 +60,27 @@
 html {
   scroll-behavior: smooth;
 }
+
 body,
 button,
 input {
   font-family: var(--body-font);
-  font-size: var (--normal-font-size);
+  font-size: var(--normal-font-size);
 }
+
 body {
   background-color: var(--body-color);
   color: var(--text-color);
 }
+
 h1,
 h2,
-h3 {
+h3,
+h4 {
   color: var(--title-color);
   font-weight: var(--font-medium);
 }
+
 ul {
   list-style: none;
 }
@@ -78,13 +88,16 @@ ul {
 a {
   text-decoration: none;
 }
+
 img {
   max-width: 100%;
   height: auto;
 }
+
 button {
   cursor: pointer;
 }
+
 button,
 input {
   border: none;
@@ -94,17 +107,20 @@ input {
 .section {
   padding: 7rem 0 2rem;
 }
-.section_title,
-.breadcrumb_title {
+
+.section__title,
+.breadcrumb__title {
   font-size: var(--h1-font-size);
 }
-.section_title,
-.breadcrumb_subtitle {
+
+.section__title,
+.breadcrumb__subtitle {
   margin-bottom: var(--mb-3);
 }
-.section_title,
-.breadcrumb_title,
-.breadcrumb_subtitle {
+
+.section__title,
+.breadcrumb__title,
+.breadcrumb__subtitle {
   text-align: center;
 }
 
@@ -113,9 +129,11 @@ input {
   margin-left: auto;
   margin-right: auto;
 }
+
 .grid {
   display: grid;
 }
+
 .active-link {
   position: relative;
 }
@@ -128,4 +146,18 @@ input {
   height: 5px;
   background: var(--text-color);
   border-radius: 50%;
+}
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 767px) {
+}
+
+@media screen and (max-width: 576px) {
+}
+
+@media screen and (max-width: 320px) {
 }
