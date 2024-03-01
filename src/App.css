@@ -161,28 +161,26 @@ input {
 
 @media screen and (max-width: 320px) {
 }
+
 .swiper-pagination {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
+  position: initial;
+  margin-top: var(--mb-2-5);
 }
 
 .swiper-pagination-bullet {
-  width: 10px;
-  height: 10px;
-  background-color: rgba(219, 0, 0, 0.5); /* Adjust the color and opacity */
-  border-radius: 50%;
-  margin: 0 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  width: 5px;
+  height: 5px;
+  background: var(--title-color);
+  opacity: 1;
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullet
+  .swiper-pagination-bullet {
+  margin: 0 0.5rem;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.9
-  ); /* Adjust the color and opacity for active bullet */
+  width: 1.5rem;
+  height: 5px;
+  border-radius: 0.5rem;
 }
