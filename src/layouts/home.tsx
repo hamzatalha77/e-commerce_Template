@@ -1,8 +1,9 @@
-import React from 'react'
 import Cart from '../components/Cart'
-import HomeSwiper from '../components/HomeSwiper'
-import Discount from '../components/Discount'
-import NewArrivals from '../components/NewArrivals'
+import HomeSwiper from '../components/Home/HomeSwiper'
+import Discount from '../components/Home/Discount'
+import NewArrivals from '../components/Home/NewArrivals'
+import Steps from '../components/Home/Steps'
+import NewsLetter from '../components/Home/NewsLetter'
 
 const Home = () => {
   return (
@@ -11,6 +12,8 @@ const Home = () => {
       <HomeSwiper />
       <Discount />
       <NewArrivals />
+      <Steps />
+      <NewsLetter />
     </div>
   )
 }
