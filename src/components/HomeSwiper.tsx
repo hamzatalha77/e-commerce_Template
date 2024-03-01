@@ -17,7 +17,7 @@ const HomeSwiper = () => {
       }}
       navigation={true}
       modules={[Autoplay, Pagination]}
-      className="container mySwiper"
+      className="container section mySwiper"
     >
       <SwiperSlide>
         <div className="grid-cols-[repeat(2,1fr)] pt-36 px-[0] pb-8 grid">

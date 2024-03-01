@@ -133,7 +133,10 @@ input {
 .grid {
   display: grid;
 }
-
+.scroll-header {
+  background-color: var(--body-color);
+  box-shadow: 0 1px 4px var(--shadow);
+}
 .active-link {
   position: relative;
 }
