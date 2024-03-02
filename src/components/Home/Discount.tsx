@@ -1,7 +1,7 @@
 const Discount = () => {
   return (
     <section className="section">
-      <div className="container grid grid-cols-[repeat(2,max-content)] justify-center items-center gap-x-28 bg-white px-[0] py-12 rounded-[3rem]">
+      <div className="container grid grid-cols-[repeat(2,max-content)] justify-center items-center gap-x-28 bg-white px-[0] py-12 rounded-[3rem] discount__container">
         <img src="/img/discount.png" alt="" className="w-52" />
         <div className="pl-24 text-center">
           <h2 className="text-2xl mb-8">

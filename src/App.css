@@ -158,20 +158,6 @@ input {
   background: var(--scroll-thumb-color);
   border-radius: 0.5rem;
 }
-@media screen and (max-width: 1200px) {
-}
-
-@media screen and (max-width: 992px) {
-}
-
-@media screen and (max-width: 767px) {
-}
-
-@media screen and (max-width: 576px) {
-}
-
-@media screen and (max-width: 320px) {
-}
 
 .swiper-pagination {
   position: initial;
@@ -209,4 +195,116 @@ input {
 }
 .show-scroll {
   bottom: 3rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .home__img {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+  }
+  .section__title {
+    font-size: var(--h2-font-size);
+    margin-bottom: var(--mb-2);
+  }
+  .home__content {
+    padding: 8rem 0 2rem;
+  }
+  .home__img {
+    height: 300px;
+    transform: translateY(0);
+  }
+  .home__indicator {
+    bottom: initial;
+    left: initial;
+    top: 7rem;
+    right: 2rem;
+  }
+  .home__indicator::after {
+    top: -3rem;
+    height: 48px;
+  }
+  .home__details-img {
+    right: 0.5rem;
+    bottom: initial;
+  }
+  .home__description {
+    padding-right: 0;
+  }
+  .swiper-pagination {
+    margin-top: var(--mb-2);
+  }
+  .discount__container {
+    column-gap: 3rem;
+  }
+  .new__content {
+    width: 242px;
+    padding: 2rem 0 1.5rem 0;
+  }
+  .new__img {
+    width: 120px;
+  }
+  .new__img,
+  .new__subtitle {
+    margin-bottom: var(--mb-0-5);
+  }
+  .new__title {
+    font-size: var(--normal-font-size);
+  }
+  .step__bg {
+    padding: 3rem 2rem 2rem;
+  }
+  .step__container {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    margin: var(--header-height) 0 0 0;
+  }
+  .section {
+    padding: 4.5rem 0 2rem;
+  }
+  .nav {
+    height: var(--header-height);
+  }
+  .nav__menu {
+    position: fixed;
+    background-color: var(--body-color);
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    padding: 6rem 2rem 3.5rem;
+    transition: 0.3s;
+  }
+  .nav__list {
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+  .nav__toggle,
+  .nav__close {
+    display: block;
+  }
+  .show-menu {
+    right: 0;
+  }
+  .home__content {
+    padding: 0;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+}
+
+@media screen and (max-width: 320px) {
 }

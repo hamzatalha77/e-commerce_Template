@@ -7,15 +7,15 @@ const Header: React.FC<HeaderProps> = ({ toggleCart }) => {
       className="w-full bg-transparent fixed top-0 left-0 z-50"
       id="header"
     >
-      <nav className="h-20 flex justify-between items-center gap-x-12 container">
+      <nav className="h-20 flex justify-between items-center gap-x-12 container nav">
         <a
           href="/"
           className="text-gray-800 lowercase font-semibold tracking-wider inline-flex items-center gap-x-1"
         >
           <i className="bx bxs-shopping-bags text-xl"></i>PentaShop
         </a>
-        <div className="">
-          <ul className="flex items-center gap-x-8">
+        <div id="nav-menu" className="nav__menu">
+          <ul className="flex items-center gap-x-8 nav__list">
             <li className="text-slate-700 font-medium text-base active-link">
               <a href="/">Home</a>
             </li>
@@ -35,8 +35,14 @@ const Header: React.FC<HeaderProps> = ({ toggleCart }) => {
               <a href="/">Contact</a>
             </li>
           </ul>
+          <div
+            id="nav-close"
+            className="text-gray-900 text-3xl absolute top-[.9rem] right-5 cursor-pointer hidden nav__close"
+          >
+            <i className="bx bx-x"></i>
+          </div>
         </div>
-        <div className="flex items-center gap-x-4 ml-auto">
+        <div className="flex items-center gap-x-4 ml-auto mr-12">
           <div className="text-gray-800 text-xl cursor-pointer">
             <i className="bx bx-user"></i>
           </div>
@@ -46,7 +52,10 @@ const Header: React.FC<HeaderProps> = ({ toggleCart }) => {
           >
             <i className="bx bx-shopping-bag"></i>
           </div>
-          <div className="text-gray-800 text-xl cursor-pointer hidden">
+          <div
+            id="nav-toggle"
+            className="text-gray-800 text-xl cursor-pointer hidden nav__toggle"
+          >
             <i className="bx bx-grid-alt"></i>
           </div>
         </div>

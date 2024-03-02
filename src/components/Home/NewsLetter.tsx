@@ -2,7 +2,9 @@ const NewsLetter = () => {
   return (
     <section className="section">
       <div className="container grid grid-cols-[.5fr] justify-center">
-        <h2 className="text-center text-4xl mb-12">Our Newsletter</h2>
+        <h2 className="text-center text-4xl mb-12 section__title">
+          Our Newsletter
+        </h2>
         <p className="px-12 py-0 text-center mb-6">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt,
           officia!
