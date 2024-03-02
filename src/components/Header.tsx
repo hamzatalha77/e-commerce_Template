@@ -1,7 +1,10 @@
+import { useState } from 'react'
+
 interface HeaderProps {
   toggleCart: () => void
 }
 const Header: React.FC<HeaderProps> = ({ toggleCart }) => {
+  const [isOpen, setIsOpen] = useState(false)
   return (
     <header
       className="w-full bg-transparent fixed top-0 left-0 z-50"
@@ -14,7 +17,12 @@ const Header: React.FC<HeaderProps> = ({ toggleCart }) => {
         >
           <i className="bx bxs-shopping-bags text-xl"></i>PentaShop
         </a>
-        <div id="nav-menu" className="nav__menu">
+        <div
+          id="nav-menu"
+          className={`fixed bg-[#f8f7fd] top-0  w-full h-full pt-24 px-8 pb-14 [transition:0.3s] ${
+            isOpen ? 'right-0' : '-right-full'
+          } `}
+        >
           <ul className="flex items-center gap-x-8 nav__list">
             <li className="text-slate-700 font-medium text-base active-link">
               <a href="/">Home</a>
@@ -37,6 +45,7 @@ const Header: React.FC<HeaderProps> = ({ toggleCart }) => {
           </ul>
           <div
             id="nav-close"
+            onClick={() => setIsOpen(!isOpen)}
             className="text-gray-900 text-3xl absolute top-[.9rem] right-5 cursor-pointer hidden nav__close"
           >
             <i className="bx bx-x"></i>
@@ -54,6 +63,7 @@ const Header: React.FC<HeaderProps> = ({ toggleCart }) => {
           </div>
           <div
             id="nav-toggle"
+            onClick={() => setIsOpen(!isOpen)}
             className="text-gray-800 text-xl cursor-pointer hidden nav__toggle"
           >
             <i className="bx bx-grid-alt"></i>
