@@ -7,13 +7,13 @@
 :root {
   --header-height: 3.5rem;
 
-  --title-color: hsl(250, 8%, 15%);
-  --text-color: hsl(250, 8%, 35%);
-  --body-color: hsl(250, 60%, 98%);
+  --title-color: #242329;
+  --text-color: #545260;
+  --body-color: #f8f7fd;
   --container-color: #fff;
-  --shadow: hsla(0, 0%, 15%, 0.1);
-  --scroll-bar-color: hsl(250, 12%, 90%);
-  --scroll-thumb-color: hsl(250, 12%, 80%);
+  --shadow: #141414;
+  --scroll-bar-color: #e3e2e9;
+  --scroll-thumb-color: #c8c6d2;
 
   --body-font: 'Poppins', sans-serif;
   --biggest-font-size: 4rem;
@@ -150,6 +150,14 @@ input {
   background: var(--text-color);
   border-radius: 50%;
 }
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background: var(--scroll-bar-color);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--scroll-thumb-color);
+  border-radius: 0.5rem;
+}
 @media screen and (max-width: 1200px) {
 }
 
@@ -186,4 +194,19 @@ input {
   width: 1.5rem;
   height: 5px;
   border-radius: 0.5rem;
+}
+.scroll-up {
+  position: relative;
+  right: 1rem;
+  bottom: -30%;
+  background-color: red;
+  border-radius: 0.4rem;
+  display: inline-flex;
+  padding: 0.25rem;
+  z-index: 10;
+  opacity: 0.8;
+  transition: 0.4s;
+}
+.show-scroll {
+  bottom: 3rem;
 }

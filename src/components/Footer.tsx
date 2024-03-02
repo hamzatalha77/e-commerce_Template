@@ -7,68 +7,124 @@ const Footer = () => {
             href="/"
             className="text-gray-900 lowercase font-semibold tracking-[1px] inline-flex items-center gap-x-1 mb-4"
           >
-            <i className="bx bx-bxs-shopping-bags"></i>PentaShop
+            <i className="bx bxs-shopping-bags text-base"></i>PentaShop
           </a>
-          <p>
+          <p className="mb-10">
             Enjoy the biggest sale <br />
             of your life.
           </p>
-          <div>
-            <a href="/">
-              <i className="bx bx-bxl-facebook"></i>
+          <div className="flex gap-x-3">
+            <a
+              href="/"
+              className="inline-flex bg-white p-1 text-gray-900 text-base rounded  hover:bg-red-600 hover:text-white"
+            >
+              <i className="bx bxl-facebook"></i>
             </a>
-            <a href="/">
-              <i className="bx bx-bxl-instagram-alt"></i>
+            <a
+              href="/"
+              className="inline-flex bg-white p-1 text-gray-900 text-base rounded hover:bg-red-600 hover:text-white"
+            >
+              <i className="bx bxl-instagram-alt"></i>
             </a>
-            <a href="/">
-              <i className="bx bx-bxl-twitter"></i>
+            <a
+              href="/"
+              className="inline-flex bg-white p-1 text-gray-900 text-base rounded hover:bg-red-600 hover:text-white"
+            >
+              <i className="bx bxl-twitter"></i>
             </a>
           </div>
         </div>
         <div>
-          <h3>About</h3>
-          <ul>
+          <h3 className="text-xl mb-4">About</h3>
+          <ul className="grid gap-y-[.35rem]">
             <li>
-              <a href="/">About Us</a>
+              <a
+                href="/"
+                className="text-sm text-gray-600 [transition:.3s] hover:text-gray-900"
+              >
+                About Us
+              </a>
             </li>
             <li>
-              <a href="/">Customer Support</a>
+              <a
+                href="/"
+                className="text-sm text-gray-600 [transition:.3s] hover:text-gray-900"
+              >
+                Customer Support
+              </a>
             </li>
             <li>
-              <a href="/">Support Center</a>
+              <a
+                href="/"
+                className="text-sm text-gray-600 [transition:.3s] hover:text-gray-900"
+              >
+                Support Center
+              </a>
             </li>
           </ul>
         </div>
         <div>
-          <h3>Our Services</h3>
-          <ul>
+          <h3 className="text-xl mb-4">Our Services</h3>
+          <ul className="grid gap-y-[.35rem]">
             <li>
-              <a href="/">Shop</a>
+              <a
+                href="/"
+                className="text-sm text-gray-600 [transition:.3s] hover:text-gray-900"
+              >
+                Shop
+              </a>
             </li>
             <li>
-              <a href="/">Discounts</a>
+              <a
+                href="/"
+                className="text-sm text-gray-600 [transition:.3s] hover:text-gray-900"
+              >
+                Discounts
+              </a>
             </li>
             <li>
-              <a href="/">Shopping Mode</a>
+              <a
+                href="/"
+                className="text-sm text-gray-600 [transition:.3s] hover:text-gray-900"
+              >
+                Shopping Mode
+              </a>
             </li>
           </ul>
         </div>
         <div>
-          <h3>Our Company</h3>
-          <ul>
+          <h3 className="text-xl mb-4">Our Company</h3>
+          <ul className="grid gap-y-[.35rem]">
             <li>
-              <a href="/">Register</a>
+              <a
+                href="/"
+                className="text-sm text-gray-600 [transition:.3s] hover:text-gray-900"
+              >
+                Register
+              </a>
             </li>
             <li>
-              <a href="/">Contact Us</a>
+              <a
+                href="/"
+                className="text-sm text-gray-600 [transition:.3s] hover:text-gray-900"
+              >
+                Contact Us
+              </a>
             </li>
             <li>
-              <a href="/">About Us</a>
+              <a
+                href="/"
+                className="text-sm text-gray-600 [transition:.3s] hover:text-gray-900"
+              >
+                About Us
+              </a>
             </li>
           </ul>
         </div>
       </div>
-      <span>&#169; Hamza Talha. All right reserved</span>
+      <span className="block text-center text-sm mt-24">
+        &#169; Hamza Talha. All right reserved
+      </span>
     </footer>
   )
 }

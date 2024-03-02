@@ -1,4 +1,7 @@
-const Header = () => {
+interface HeaderProps {
+  toggleCart: () => void
+}
+const Header: React.FC<HeaderProps> = ({ toggleCart }) => {
   return (
     <header
       className="w-full bg-transparent fixed top-0 left-0 z-50"
@@ -37,7 +40,10 @@ const Header = () => {
           <div className="text-gray-800 text-xl cursor-pointer">
             <i className="bx bx-user"></i>
           </div>
-          <div className="text-gray-800 text-xl cursor-pointer">
+          <div
+            className="text-gray-800 text-xl cursor-pointer"
+            onClick={toggleCart}
+          >
             <i className="bx bx-shopping-bag"></i>
           </div>
           <div className="text-gray-800 text-xl cursor-pointer hidden">

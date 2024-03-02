@@ -1,7 +1,13 @@
-const Cart = () => {
+interface CartProps {
+  toggleCart: () => void
+}
+const Cart: React.FC<CartProps> = ({ toggleCart }) => {
   return (
-    <div className="fixed bg-slate-200 z-50 w-[420px] shadow-[0px_-2px_0px_4px_rgba(38, 38, 38, 0.1)] h-full top-0 -right-full [transition:.4s] px-8 py-[3,5rem]">
-      <i className="bx bx-x text-3xl text-slate-800 absolute top-5 right-4 cursor-pointer"></i>
+    <div className="fixed bg-slate-200 z-50 w-[420px] [box-shadow:-2px_0px_4px_gray] h-full top-0 right-0 [transition:.4s] px-8 py-[3,5rem]">
+      <i
+        className="bx bx-x text-3xl text-slate-800 absolute top-5 right-4 cursor-pointer"
+        onClick={toggleCart}
+      ></i>
       <h2 className="text-2xl text-center mb-12 pt-14">My Cart</h2>
       <div className="grid gap-y-6">
         <article className="flex items-center gap-x-4">
