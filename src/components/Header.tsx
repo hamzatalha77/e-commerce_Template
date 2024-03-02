@@ -19,10 +19,11 @@ const Header: React.FC<HeaderProps> = ({ toggleCart }) => {
         </a>
         <div
           id="nav-menu"
-          className={`fixed bg-[#f8f7fd] top-0  w-full h-full pt-24 px-8 pb-14 [transition:0.3s] ${
+          className={`fixed bg-[#f8f7fd] top-0 w-full h-full pt-24 px-8 pb-14 [transition:0.3s] ${
             isOpen ? 'right-0' : '-right-full'
           } `}
         >
+          {/* [@media_screen_and(max-width:767px)] */}
           <ul className="flex items-center gap-x-8 nav__list">
             <li className="text-slate-700 font-medium text-base active-link">
               <a href="/">Home</a>
