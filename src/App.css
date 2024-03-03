@@ -284,9 +284,7 @@ input {
   .nav__close {
     display: block;
   }
-  .show-menu {
-    right: 0;
-  }
+
   .home__content {
     padding: 0;
     grid-template-columns: 1fr;
