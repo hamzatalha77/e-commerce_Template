@@ -14,7 +14,7 @@ const Header: React.FC<HeaderProps> = ({ toggleCart }) => {
         >
           <i className="bx bxs-shopping-bags text-xl"></i>PentaShop
         </a>
-        <div id="nav-menu">
+        <div id="nav-menu" className="">
           <ul className="flex items-center gap-x-8 nav__list">
             <li className="text-slate-700 font-medium text-base active-link">
               <a href="/">Home</a>
