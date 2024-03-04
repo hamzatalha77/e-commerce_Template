@@ -1,7 +1,7 @@
 const NewsLetter = () => {
   return (
     <section className="section">
-      <div className="container grid grid-cols-[.5fr] justify-center">
+      <div className="container grid grid-cols-[.5fr] justify-center newsletter__container">
         <h2 className="text-center text-4xl mb-12 section__title">
           Our Newsletter
         </h2>

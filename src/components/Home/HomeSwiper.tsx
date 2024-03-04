@@ -35,7 +35,7 @@ const HomeSwiper = () => {
           </div>
           <div>
             <h3 className="text-base uppercase mb-4">1# TRENDING ITEM</h3>
-            <h1 className="text-[4rem] font-semibold leading-[109%] mb-6 ">
+            <h1 className="text-[4rem] font-semibold leading-[109%] mb-6 home__title">
               ORIGINAL
               <br />
               IS NEVER <br />
@@ -80,7 +80,7 @@ const HomeSwiper = () => {
           </div>
           <div>
             <h3 className="text-base uppercase mb-4">1# TRENDING ITEM</h3>
-            <h1 className="text-[4rem] font-semibold leading-[109%] mb-6 ">
+            <h1 className="text-[4rem] font-semibold leading-[109%] mb-6 home__title">
               ORIGINAL
               <br />
               IS NEVER <br />
@@ -125,7 +125,7 @@ const HomeSwiper = () => {
           </div>
           <div>
             <h3 className="text-base uppercase mb-4">1# TRENDING ITEM</h3>
-            <h1 className="text-[4rem] font-semibold leading-[109%] mb-6 ">
+            <h1 className="text-[4rem] font-semibold leading-[109%] mb-6 home__title">
               ORIGINAL
               <br />
               IS NEVER <br />

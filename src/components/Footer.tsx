@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer className="section relative overflow-hidden">
-      <div className="container grid grid-cols-[repeat(4,1fr)] justify-center gap-x-4">
+      <div className="container grid grid-cols-[repeat(4,1fr)] justify-center gap-x-4 footer__container">
         <div>
           <a
             href="/"
@@ -122,7 +122,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <span className="block text-center text-sm mt-24">
+      <span className="block text-center text-sm mt-24 footer__copy">
         &#169; Hamza Talha. All right reserved
       </span>
     </footer>
