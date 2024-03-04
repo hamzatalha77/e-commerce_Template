@@ -22,7 +22,7 @@ const ScrollUp = () => {
           href="#"
           id="scroll-up"
           onClick={handleScrollToTop}
-          className="fixed w-12 h-12 place-content-center right-4 bottom-12 bg-red-600 inline-flex p-1 z-10 opacity-80 [transition:.4s] hover:opacity-100"
+          className="fixed w-12 h-12 place-content-center right-4 bottom-12 bg-red-600 inline-flex p-1 z-10 rounded-lg opacity-80 [transition:.4s] hover:opacity-100"
         >
           <i className="bx bx-up-arrow-alt text-[2.5rem] text-white"></i>
         </a>

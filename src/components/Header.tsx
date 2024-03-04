@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
 interface HeaderProps {
   toggleCart: () => void
@@ -6,13 +7,12 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ toggleCart }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(() => {
-    // Check if there's a menu state stored in localStorage
     const storedMenuState = localStorage.getItem('isMenuOpen')
-    // Return the stored state if available, otherwise return false (closed by default)
     return storedMenuState ? JSON.parse(storedMenuState) : false
   })
 
-  // Update localStorage whenever menu state changes
+  const [activeLink, setActiveLink] = useState<string>('')
+
   useEffect(() => {
     localStorage.setItem('isMenuOpen', JSON.stringify(isMenuOpen))
   }, [isMenuOpen])
@@ -20,6 +20,12 @@ const Header: React.FC<HeaderProps> = ({ toggleCart }) => {
   const toggleClass = () => {
     setIsMenuOpen((prevState: any) => !prevState)
   }
+
+  const handleLinkClick = (path: string) => {
+    setActiveLink(path)
+    toggleClass()
+  }
+
   return (
     <header
       className="w-full bg-transparent fixed top-0 left-0 z-50"
@@ -34,23 +40,53 @@ const Header: React.FC<HeaderProps> = ({ toggleCart }) => {
         </a>
         <div id="nav-menu" className={isMenuOpen ? 'nav__menu' : 'show__menu'}>
           <ul className="flex items-center gap-x-8 nav__list">
-            <li className="text-slate-700 font-medium text-base active-link">
-              <a href="/">Home</a>
+            <li
+              className={`text-slate-700 font-medium text-base ${
+                activeLink === '/' ? 'active-link' : ''
+              }`}
+              onClick={() => handleLinkClick('/')}
+            >
+              <Link to="/">Home</Link>
             </li>
-            <li className="text-slate-700 font-medium text-base">
-              <a href="/">Shop</a>
+            <li
+              className={`text-slate-700 font-medium text-base ${
+                activeLink === '/shop' ? 'active-link' : ''
+              }`}
+              onClick={() => handleLinkClick('/shop')}
+            >
+              <Link to="/shop">Shop</Link>
             </li>
-            <li className="text-slate-700 font-medium text-base">
-              <a href="/">Cart</a>
+            <li
+              className={`text-slate-700 font-medium text-base ${
+                activeLink === '/cart' ? 'active-link' : ''
+              }`}
+              onClick={() => handleLinkClick('/cart')}
+            >
+              <Link to="/cart">Cart</Link>
             </li>
-            <li className="text-slate-700 font-medium text-base">
-              <a href="/">Blog</a>
+            <li
+              className={`text-slate-700 font-medium text-base ${
+                activeLink === '/blog' ? 'active-link' : ''
+              }`}
+              onClick={() => handleLinkClick('/blog')}
+            >
+              <Link to="/blog">Blog</Link>
             </li>
-            <li className="text-slate-700 font-medium text-base">
-              <a href="/">Faq's</a>
+            <li
+              className={`text-slate-700 font-medium text-base ${
+                activeLink === '/faqs' ? 'active-link' : ''
+              }`}
+              onClick={() => handleLinkClick('/faqs')}
+            >
+              <Link to="/faqs">Faq's</Link>
             </li>
-            <li className="text-slate-700 font-medium text-base">
-              <a href="/">Contact</a>
+            <li
+              className={`text-slate-700 font-medium text-base ${
+                activeLink === '/contact' ? 'active-link' : ''
+              }`}
+              onClick={() => handleLinkClick('/contact')}
+            >
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
           <div
