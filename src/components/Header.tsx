@@ -1,13 +1,24 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 interface HeaderProps {
   toggleCart: () => void
 }
+
 const Header: React.FC<HeaderProps> = ({ toggleCart }) => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(() => {
+    // Check if there's a menu state stored in localStorage
+    const storedMenuState = localStorage.getItem('isMenuOpen')
+    // Return the stored state if available, otherwise return false (closed by default)
+    return storedMenuState ? JSON.parse(storedMenuState) : false
+  })
+
+  // Update localStorage whenever menu state changes
+  useEffect(() => {
+    localStorage.setItem('isMenuOpen', JSON.stringify(isMenuOpen))
+  }, [isMenuOpen])
 
   const toggleClass = () => {
-    setIsMenuOpen(!isMenuOpen)
+    setIsMenuOpen((prevState: any) => !prevState)
   }
   return (
     <header

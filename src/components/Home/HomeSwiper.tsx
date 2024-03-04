@@ -46,7 +46,7 @@ const HomeSwiper = () => {
               possimus, aut placeat. Eaque laudantium dolorum omnis? Perferendis
               nisi dolore ut?
             </p>
-            <div className="flex justify-between">
+            <div className="flex justify-between home__buttons">
               <a
                 href="/"
                 className="inline-block bg-red-600 text-white px-7 py-4 rounded-[.5rem] font-medium [transition:.3s] hover:bg-red-500"
@@ -91,7 +91,7 @@ const HomeSwiper = () => {
               possimus, aut placeat. Eaque laudantium dolorum omnis? Perferendis
               nisi dolore ut?
             </p>
-            <div className="flex justify-between">
+            <div className="flex justify-between home__buttons">
               <a
                 href="/"
                 className="inline-block bg-red-600 text-white px-7 py-4 rounded-[.5rem] font-medium [transition:.3s] hover:bg-red-500"
@@ -136,7 +136,7 @@ const HomeSwiper = () => {
               possimus, aut placeat. Eaque laudantium dolorum omnis? Perferendis
               nisi dolore ut?
             </p>
-            <div className="flex justify-between">
+            <div className="flex justify-between home__buttons">
               <a
                 href="/"
                 className="inline-block bg-red-600 text-white px-7 py-4 rounded-[.5rem] font-medium [transition:.3s] hover:bg-red-500"

@@ -3,7 +3,7 @@ interface CartProps {
 }
 const Cart: React.FC<CartProps> = ({ toggleCart }) => {
   return (
-    <div className="fixed bg-slate-200 z-50 w-[420px] [box-shadow:-2px_0px_4px_gray] h-full top-0 right-0 [transition:.4s] px-8 py-[3,5rem]">
+    <div className="fixed bg-slate-200 z-50 w-[420px] [box-shadow:-2px_0px_4px_gray] h-full top-0 right-0 px-8 py-[3,5rem] cart">
       <i
         className="bx bx-x text-3xl text-slate-800 absolute top-5 right-4 cursor-pointer"
         onClick={toggleCart}

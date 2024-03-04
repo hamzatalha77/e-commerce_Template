@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer className="section relative overflow-hidden">
-      <div className="container grid grid-cols-[repeat(4,1fr)] justify-center gap-x-4 footer__container">
+      <div className="container grid grid-cols-[repeat(4,1fr)] justify-items-center gap-x-4 footer__container">
         <div>
           <a
             href="/"
