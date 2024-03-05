@@ -97,7 +97,7 @@ const Header: React.FC<HeaderProps> = ({ toggleCart }) => {
             <i className="bx bx-x"></i>
           </div>
         </div>
-        <div className="flex items-center gap-x-4 ml-auto mr-8">
+        <div className="flex items-center gap-x-4 ml-auto mr-12">
           <div className="text-gray-800 text-xl cursor-pointer">
             <i className="bx bx-user"></i>
           </div>
