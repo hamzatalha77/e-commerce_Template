@@ -5,8 +5,8 @@ const Shop = () => {
       <h3 className="breadcrumb__subtitle">
         Home {'>'} <span className="text-red-600">Shop</span>
       </h3>
-      <div className="grid grid-cols-[1.7fr_3.3fr] gap-x-[1.8rem]">
-        <div className="p-[1.8rem] bg-white rounded-2xl">
+      <div className="grid grid-cols-[1.7fr_3.3fr] gap-x-[1.8rem] shop__container">
+        <div className="p-[1.8rem] bg-white rounded-2xl sidebar">
           <h3 className="text-xl uppercase">Select Filters</h3>
           <div>
             <h3 className="mt-5 mx-[0] mb-2 text-base">Condition</h3>
@@ -92,18 +92,18 @@ const Shop = () => {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-[repeat(2,1fr)] gap-[1.6rem] ">
-          <div className="relative bg-white py-8 px-0 rounded-2xl text-center overflow-hidden group">
+        <div className="grid grid-cols-[repeat(2,1fr)] gap-[1.6rem] shop__items">
+          <div className="relative bg-white py-8 px-0 rounded-2xl text-center overflow-hidden group shop__centent">
             <div className="absolute top-[8%] left-[8%] bg-red-600 text-white text-sm py-2 px-1 rounded">
               New
             </div>
             <img
               src="/img/product-2.png"
               alt=""
-              className="w-[150px] mb-4 inline [transition:.3s] group-hover:-translate-y-[.5rem] "
+              className="w-[150px] mb-4 inline [transition:.3s] group-hover:-translate-y-[.5rem] shop__img"
             />
-            <h3 className="text-xl font-medium">Cartoon Jacket</h3>
-            <span className="block text-sm mb-4">Accessory</span>
+            <h3 className="text-xl font-medium shop__title">Cartoon Jacket</h3>
+            <span className="block text-sm mb-4 shop__subtitle">Accessory</span>
 
             <div className="inline-flex items-center gap-x-2">
               <span className="font-medium text-gray-900">$14.99</span>
@@ -118,17 +118,17 @@ const Shop = () => {
               <i className="bx bx-cart-alt text-xl"></i>
             </a>
           </div>
-          <div className="relative bg-white py-8 px-0 rounded-2xl text-center overflow-hidden group">
+          <div className="relative bg-white py-8 px-0 rounded-2xl text-center overflow-hidden group shop__centent">
             <div className="absolute top-[8%] left-[8%] bg-red-600 text-white text-sm py-2 px-1 rounded">
               New
             </div>
             <img
               src="/img/product-2.png"
               alt=""
-              className="w-[150px] mb-4 inline [transition:.3s] group-hover:-translate-y-[.5rem] "
+              className="w-[150px] mb-4 inline [transition:.3s] group-hover:-translate-y-[.5rem] shop__img"
             />
-            <h3 className="text-xl font-medium">Cartoon Jacket</h3>
-            <span className="block text-sm mb-4">Accessory</span>
+            <h3 className="text-xl font-medium shop__title">Cartoon Jacket</h3>
+            <span className="block text-sm mb-4 shop__subtitle">Accessory</span>
 
             <div className="inline-flex items-center gap-x-2">
               <span className="font-medium text-gray-900">$14.99</span>
@@ -143,17 +143,17 @@ const Shop = () => {
               <i className="bx bx-cart-alt text-xl"></i>
             </a>
           </div>
-          <div className="relative bg-white py-8 px-0 rounded-2xl text-center overflow-hidden group">
+          <div className="relative bg-white py-8 px-0 rounded-2xl text-center overflow-hidden group shop__centent">
             <div className="absolute top-[8%] left-[8%] bg-red-600 text-white text-sm py-2 px-1 rounded">
               New
             </div>
             <img
               src="/img/product-2.png"
               alt=""
-              className="w-[150px] mb-4 inline [transition:.3s] group-hover:-translate-y-[.5rem] "
+              className="w-[150px] mb-4 inline [transition:.3s] group-hover:-translate-y-[.5rem] shop__img"
             />
-            <h3 className="text-xl font-medium">Cartoon Jacket</h3>
-            <span className="block text-sm mb-4">Accessory</span>
+            <h3 className="text-xl font-medium shop__title">Cartoon Jacket</h3>
+            <span className="block text-sm mb-4 shop__subtitle">Accessory</span>
 
             <div className="inline-flex items-center gap-x-2">
               <span className="font-medium text-gray-900">$14.99</span>
@@ -168,17 +168,17 @@ const Shop = () => {
               <i className="bx bx-cart-alt text-xl"></i>
             </a>
           </div>
-          <div className="relative bg-white py-8 px-0 rounded-2xl text-center overflow-hidden group">
+          <div className="relative bg-white py-8 px-0 rounded-2xl text-center overflow-hidden group shop__centent">
             <div className="absolute top-[8%] left-[8%] bg-red-600 text-white text-sm py-2 px-1 rounded">
               New
             </div>
             <img
               src="/img/product-2.png"
               alt=""
-              className="w-[150px] mb-4 inline [transition:.3s] group-hover:-translate-y-[.5rem] "
+              className="w-[150px] mb-4 inline [transition:.3s] group-hover:-translate-y-[.5rem] shop__img"
             />
-            <h3 className="text-xl font-medium">Cartoon Jacket</h3>
-            <span className="block text-sm mb-4">Accessory</span>
+            <h3 className="text-xl font-medium shop__title">Cartoon Jacket</h3>
+            <span className="block text-sm mb-4 shop__subtitle">Accessory</span>
 
             <div className="inline-flex items-center gap-x-2">
               <span className="font-medium text-gray-900">$14.99</span>
@@ -193,17 +193,17 @@ const Shop = () => {
               <i className="bx bx-cart-alt text-xl"></i>
             </a>
           </div>
-          <div className="relative bg-white py-8 px-0 rounded-2xl text-center overflow-hidden group">
+          <div className="relative bg-white py-8 px-0 rounded-2xl text-center overflow-hidden group shop__centent">
             <div className="absolute top-[8%] left-[8%] bg-red-600 text-white text-sm py-2 px-1 rounded">
               New
             </div>
             <img
               src="/img/product-2.png"
               alt=""
-              className="w-[150px] mb-4 inline [transition:.3s] group-hover:-translate-y-[.5rem] "
+              className="w-[150px] mb-4 inline [transition:.3s] group-hover:-translate-y-[.5rem] shop__img"
             />
-            <h3 className="text-xl font-medium">Cartoon Jacket</h3>
-            <span className="block text-sm mb-4">Accessory</span>
+            <h3 className="text-xl font-medium shop__title">Cartoon Jacket</h3>
+            <span className="block text-sm mb-4 shop__subtitle">Accessory</span>
 
             <div className="inline-flex items-center gap-x-2">
               <span className="font-medium text-gray-900">$14.99</span>
@@ -218,17 +218,17 @@ const Shop = () => {
               <i className="bx bx-cart-alt text-xl"></i>
             </a>
           </div>
-          <div className="relative bg-white py-8 px-0 rounded-2xl text-center overflow-hidden group">
+          <div className="relative bg-white py-8 px-0 rounded-2xl text-center overflow-hidden group shop__centent">
             <div className="absolute top-[8%] left-[8%] bg-red-600 text-white text-sm py-2 px-1 rounded">
               New
             </div>
             <img
               src="/img/product-2.png"
               alt=""
-              className="w-[150px] mb-4 inline [transition:.3s] group-hover:-translate-y-[.5rem] "
+              className="w-[150px] mb-4 inline [transition:.3s] group-hover:-translate-y-[.5rem] shop__img"
             />
-            <h3 className="text-xl font-medium">Cartoon Jacket</h3>
-            <span className="block text-sm mb-4">Accessory</span>
+            <h3 className="text-xl font-medium shop__title">Cartoon Jacket</h3>
+            <span className="block text-sm mb-4 shop__subtitle">Accessory</span>
 
             <div className="inline-flex items-center gap-x-2">
               <span className="font-medium text-gray-900">$14.99</span>
@@ -245,7 +245,7 @@ const Shop = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-end gap-x-[.8rem] mt-10 text-base">
+      <div className="flex items-center justify-end gap-x-[.8rem] mt-10 text-base pagination">
         <i className="bx bx-chevron-left text-2xl"></i>
         <span className="w-[2.2rem] h-[2.2rem] leading-9 text-center rounded-[50%] cursor-pointer bg-red-600 text-white ">
           1
