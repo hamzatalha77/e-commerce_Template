@@ -8,6 +8,7 @@ import ScrollUp from './components/ScrollUp'
 import Footer from './components/Footer'
 import Shop from './layouts/shop'
 import Blog from './layouts/blog'
+import Product from './layouts/product'
 
 const App = () => {
   const [isCartOpen, setIsCartOpen] = useState(false)
@@ -23,6 +24,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/product" element={<Product />} />
       </Routes>
       {isCartOpen && <Cart toggleCart={toggleCart} />}
       <ScrollUp />
