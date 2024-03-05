@@ -125,7 +125,7 @@ input {
 }
 
 .container {
-  max-width: 968px;
+  /* max-width: 968px; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -385,6 +385,7 @@ input {
     grid-template-columns: 1fr;
   }
   .cart {
+    height: 100%;
     width: 100%;
   }
   .shop__container {
