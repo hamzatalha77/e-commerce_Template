@@ -139,9 +139,9 @@ const Product = () => {
                             <img
                               className="mr-2 w-6 h-6 rounded-full"
                               src="https://flowbite.com/docs/images/people/profile-picture-2.jpg"
-                              alt="Michael Gough"
+                              alt="Hamza Talha"
                             />
-                            Michael Gough
+                            Hamza Talha
                           </p>
                           <p className="text-sm text-gray-600 dark:text-gray-400">
                             <time
