@@ -80,7 +80,7 @@ const Product = () => {
 
       <section className="section container">
         <div className="container mx-auto mt-12">
-          <div className="flex flex-col items-center justify-center max-w-xl">
+          <div className="flex flex-col  justify-center ">
             <ul className="flex space-x-2">
               <li>
                 <div
@@ -89,7 +89,7 @@ const Product = () => {
                     openTab === 1 ? 'bg-purple-600 text-white' : ''
                   } inline-block px-4 py-2 text-gray-600 bg-white rounded shadow`}
                 >
-                  React Tabs 1
+                  Comments
                 </div>
               </li>
               <li>
@@ -99,7 +99,7 @@ const Product = () => {
                     openTab === 2 ? 'bg-purple-600 text-white' : ''
                   } inline-block px-4 py-2 text-gray-600 bg-white rounded shadow`}
                 >
-                  React Tabs 2
+                  Description
                 </div>
               </li>
             </ul>
@@ -180,7 +180,7 @@ const Product = () => {
                           >
                             <li>
                               <a
-                                href="#"
+                                href="/"
                                 className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                               >
                                 Edit
@@ -188,7 +188,7 @@ const Product = () => {
                             </li>
                             <li>
                               <a
-                                href="#"
+                                href="/"
                                 className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                               >
                                 Remove
@@ -196,7 +196,7 @@ const Product = () => {
                             </li>
                             <li>
                               <a
-                                href="#"
+                                href="/"
                                 className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                               >
                                 Report
