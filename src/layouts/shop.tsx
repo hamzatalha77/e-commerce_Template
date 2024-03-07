@@ -112,7 +112,7 @@ const Shop = () => {
               </span>
             </div>
             <a
-              href="/"
+              href="/product"
               className="bg-red-600 text-white px-7 py-4 rounded-[.5rem] font-medium [transition:.3s] hover:bg-red-500 inline-block p-2 rounded-tl-[.25rem] rounded-br-[.75rem] rounded-tr-[.25rem] rounded-bl-[.25rem] absolute bottom-0 -right-24  group-hover:right-0"
             >
               <i className="bx bx-cart-alt text-xl"></i>
@@ -137,7 +137,7 @@ const Shop = () => {
               </span>
             </div>
             <a
-              href="/"
+              href="/product"
               className="bg-red-600 text-white px-7 py-4 rounded-[.5rem] font-medium [transition:.3s] hover:bg-red-500 inline-block p-2 rounded-tl-[.25rem] rounded-br-[.75rem] rounded-tr-[.25rem] rounded-bl-[.25rem] absolute bottom-0 -right-24  group-hover:right-0"
             >
               <i className="bx bx-cart-alt text-xl"></i>
@@ -162,7 +162,7 @@ const Shop = () => {
               </span>
             </div>
             <a
-              href="/"
+              href="/product"
               className="bg-red-600 text-white px-7 py-4 rounded-[.5rem] font-medium [transition:.3s] hover:bg-red-500 inline-block p-2 rounded-tl-[.25rem] rounded-br-[.75rem] rounded-tr-[.25rem] rounded-bl-[.25rem] absolute bottom-0 -right-24  group-hover:right-0"
             >
               <i className="bx bx-cart-alt text-xl"></i>
@@ -187,7 +187,7 @@ const Shop = () => {
               </span>
             </div>
             <a
-              href="/"
+              href="/product"
               className="bg-red-600 text-white px-7 py-4 rounded-[.5rem] font-medium [transition:.3s] hover:bg-red-500 inline-block p-2 rounded-tl-[.25rem] rounded-br-[.75rem] rounded-tr-[.25rem] rounded-bl-[.25rem] absolute bottom-0 -right-24  group-hover:right-0"
             >
               <i className="bx bx-cart-alt text-xl"></i>
@@ -212,7 +212,7 @@ const Shop = () => {
               </span>
             </div>
             <a
-              href="/"
+              href="/product"
               className="bg-red-600 text-white px-7 py-4 rounded-[.5rem] font-medium [transition:.3s] hover:bg-red-500 inline-block p-2 rounded-tl-[.25rem] rounded-br-[.75rem] rounded-tr-[.25rem] rounded-bl-[.25rem] absolute bottom-0 -right-24  group-hover:right-0"
             >
               <i className="bx bx-cart-alt text-xl"></i>
@@ -237,7 +237,7 @@ const Shop = () => {
               </span>
             </div>
             <a
-              href="/"
+              href="/product"
               className="bg-red-600 text-white px-7 py-4 rounded-[.5rem] font-medium [transition:.3s] hover:bg-red-500 inline-block p-2 rounded-tl-[.25rem] rounded-br-[.75rem] rounded-tr-[.25rem] rounded-bl-[.25rem] absolute bottom-0 -right-24  group-hover:right-0"
             >
               <i className="bx bx-cart-alt text-xl"></i>

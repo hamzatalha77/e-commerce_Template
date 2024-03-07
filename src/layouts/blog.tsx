@@ -27,7 +27,7 @@ const Blog = () => {
             </div>
           </div>
         </div>
-        <div className="grid-cols-[.8fr_1.2fr] gap-x-8 items-center bg-white rounded-[1.2rem] p-[1.4rem] grid">
+        <div className="grid-cols-[.8fr_1.2fr] gap-x-8 items-center bg-white rounded-[1.2rem] p-[1.4rem] grid blog__post">
           <img src="/img/blog-1.webp" alt="" className="rounded-[.8rem]" />
           <div>
             <p className="text-sm text-justify mb-4">
@@ -35,7 +35,7 @@ const Blog = () => {
               illo modi consequatur voluptatem fugiat ipsum nihil vero laborum
               commodi sit?
             </p>
-            <h3 className="text-xl font-medium mb-2">
+            <h3 className="text-xl font-medium mb-2 blog__title">
               From Now We Are Certified Web...
             </h3>
             <p className="text-sm text-gray-600 mb-3">
@@ -48,7 +48,7 @@ const Blog = () => {
             </div>
           </div>
         </div>
-        <div className="grid-cols-[.8fr_1.2fr] gap-x-8 items-center bg-white rounded-[1.2rem] p-[1.4rem] grid">
+        <div className="grid-cols-[.8fr_1.2fr] gap-x-8 items-center bg-white rounded-[1.2rem] p-[1.4rem] grid blog__post">
           <img src="/img/blog-1.webp" alt="" className="rounded-[.8rem]" />
           <div>
             <p className="text-sm text-justify mb-4">
@@ -56,7 +56,7 @@ const Blog = () => {
               illo modi consequatur voluptatem fugiat ipsum nihil vero laborum
               commodi sit?
             </p>
-            <h3 className="text-xl font-medium mb-2">
+            <h3 className="text-xl font-medium mb-2 blog__title">
               From Now We Are Certified Web...
             </h3>
             <p className="text-sm text-gray-600 mb-3">

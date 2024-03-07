@@ -9,8 +9,8 @@ const Product = () => {
       <h3 className="breadcrumb__subtitle">
         Home {'>'} <span className="text-red-600">Details</span>
       </h3>
-      <div className="grid grid-cols-[repeat(2,1fr)] items-center gap-x-12">
-        <div className="grid grid-cols-[repeat(2,1fr)] gap-[1.4rem]">
+      <div className="grid grid-cols-[repeat(2,1fr)] items-center gap-x-12 details__container">
+        <div className="grid grid-cols-[repeat(2,1fr)] gap-[1.4rem] product__images">
           <div className="bg-white py-0 px-[1.2rem] flex justify-center items-center rounded-lg relative cursor-pointer">
             <div className="absolute top-[8%] left-[8%] bg-red-600 text-white text-sm py-2 px-[.16rem] rounded">
               New
@@ -29,7 +29,7 @@ const Product = () => {
         </div>
         <div>
           <p className="text-sm text-gray-600 mb-2">Woman {'>'} Jacket's </p>
-          <h3 className="text-2xl font-medium mb-3">
+          <h3 className="text-2xl font-medium mb-3 details__title">
             Windbreaker , Denim - Jacket
           </h3>
           <div className="flex items-center gap-x-[1.2rem] mb-4">

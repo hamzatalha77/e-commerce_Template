@@ -286,6 +286,12 @@ input {
   .blog__title {
     font-size: var(--normal-font-size);
   }
+  .details__container {
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+  .details__title {
+    margin-bottom: var(--mb-0-5);
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -373,6 +379,11 @@ input {
   .blog__post {
     grid-template-columns: repeat(2 1fr);
   }
+  .details__container {
+    grid-template-columns: 0.8fr;
+    justify-content: center;
+    row-gap: 2rem;
+  }
   .footer__container {
     grid-template-columns: 1fr;
     row-gap: 2rem;
@@ -418,6 +429,9 @@ input {
     grid-template-columns: 1fr;
     row-gap: 0.8rem;
   }
+  .details__container {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -450,5 +464,8 @@ input {
   }
   .blog__post {
     padding: 0.8rem;
+  }
+  .product__images {
+    grid-template-columns: 1fr;
   }
 }
