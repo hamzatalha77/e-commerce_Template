@@ -93,12 +93,7 @@ img {
   max-width: 100%;
   height: auto;
 }
-.desc {
-  margin-top: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
+
 button {
   cursor: pointer;
 }
@@ -201,7 +196,12 @@ input {
 .show-scroll {
   bottom: 3rem;
 }
-
+.desc {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 @media screen and (max-width: 1200px) {
   .home__img {
     height: 400px;
@@ -401,6 +401,15 @@ input {
 }
 
 @media screen and (max-width: 576px) {
+  .spec {
+    flex-direction: column;
+  }
+  .spec1 {
+    max-width: 100%;
+  }
+  .spec2 {
+    margin-top: 1rem;
+  }
   .steps__container {
     grid-template-columns: 1fr;
   }

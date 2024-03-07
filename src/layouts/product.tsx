@@ -246,7 +246,7 @@ const Product = () => {
                   <p className="order-3">
                     Last updated on Oct 09, 2023 13:30:57 PDTView all revisions
                   </p>
-                  <p className="order-2">eBay item number:193639233725</p>
+                  <p className="order-2">PentaShop item number:193639233725</p>
                 </div>
                 <div className="mt-8">
                   <div className="mb-4">
@@ -254,8 +254,8 @@ const Product = () => {
                       Item specifics
                     </h2>
                   </div>
-                  <div className="flex justify-between">
-                    <div className="max-w-[50%]">
+                  <div className="flex justify-between spec">
+                    <div className="max-w-[50%] spec1">
                       <p className="font-semibold">
                         Condition:
                         <span className="text-sm font-thin ml-2">
@@ -266,7 +266,7 @@ const Product = () => {
                       <p className="font-semibold">
                         Brand:
                         <span className="text-sm font-thin ml-2">
-                          Unbranded{' '}
+                          Unbranded
                         </span>
                       </p>
                       <p className="font-semibold">
@@ -282,7 +282,7 @@ const Product = () => {
                         </span>
                       </p>
                     </div>
-                    <div>
+                    <div className="spec2">
                       <p className="font-semibold">
                         Type:
                         <span className="text-sm font-thin ml-2">Fan</span>
