@@ -40,7 +40,7 @@ const Product = () => {
               <i className="bx bxs-star mr-[.1rem]"></i>
               <i className="bx bx-star mr-[.1rem]"></i>
             </div>
-            <span className="text-sm">40 + Reviews</span>
+            <span className="text-sm font-thin ml-2">40 + Reviews</span>
           </div>
           <div className="inline-flex items-center gap-x-[.8rem] mb-6">
             <span className="font-medium text-gray-900 text-xl">$29.99</span>
@@ -78,16 +78,16 @@ const Product = () => {
         </div>
       </div>
 
-      <section className="section container">
-        <div className="container mx-auto mt-12">
-          <div className="flex flex-col  justify-center ">
+      <section className="section  details__comment">
+        <div className=" mx-auto mt-12">
+          <div className="flex flex-col justify-center">
             <ul className="flex space-x-2">
               <li>
                 <div
                   onClick={() => setOpenTab(1)}
                   className={` ${
-                    openTab === 1 ? 'bg-purple-600 text-white' : ''
-                  } inline-block px-4 py-2 text-gray-600 bg-white rounded shadow`}
+                    openTab === 1 ? '  text-red-600' : 'text-gray-600'
+                  } inline-block px-4 py-2 text-gray-600 bg-white rounded shadow cursor-pointer`}
                 >
                   Comments
                 </div>
@@ -96,8 +96,8 @@ const Product = () => {
                 <div
                   onClick={() => setOpenTab(2)}
                   className={` ${
-                    openTab === 2 ? 'bg-purple-600 text-white' : ''
-                  } inline-block px-4 py-2 text-gray-600 bg-white rounded shadow`}
+                    openTab === 2 ? '  text-red-600' : 'text-gray-600'
+                  } inline-block px-4 py-2 text-gray-600 bg-white rounded shadow cursor-pointer`}
                 >
                   Description
                 </div>
@@ -105,37 +105,37 @@ const Product = () => {
             </ul>
             <div className="p-3 mt-6 bg-white border">
               <div className={openTab === 1 ? 'block' : 'hidden'}>
-                <section className="bg-white dark:bg-gray-900 py-8 lg:py-16 antialiased">
+                <section className="bg-white py-8 lg:py-16 antialiased">
                   <div className="max-w-2xl mx-auto px-4">
                     <div className="flex justify-between items-center mb-6">
-                      <h2 className="text-lg lg:text-2xl font-bold text-gray-900 dark:text-white">
+                      <h2 className="text-lg lg:text-2xl font-bold text-gray-900 ">
                         Discussion (20)
                       </h2>
                     </div>
                     <form className="mb-6">
-                      <div className="py-2 px-4 mb-4 bg-white rounded-lg rounded-t-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+                      <div className="py-2 px-4 mb-4 bg-white rounded-lg rounded-t-lg border border-gray-200">
                         <label htmlFor="comment" className="sr-only">
                           Your comment
                         </label>
                         <textarea
                           id="comment"
                           rows={6}
-                          className="px-0 w-full text-sm text-gray-900 border-0 focus:ring-0 focus:outline-none dark:text-white dark:placeholder-gray-400 dark:bg-gray-800"
+                          className="px-0 w-full text-sm text-gray-900 border-0 focus:ring-0 focus:outline-none"
                           placeholder="Write a comment..."
                           required
                         ></textarea>
                       </div>
                       <button
                         type="submit"
-                        className="inline-flex items-center py-2.5 px-4 text-xs font-medium text-center text-white bg-primary-700 rounded-lg focus:ring-4 focus:ring-primary-200 dark:focus:ring-primary-900 hover:bg-primary-800"
+                        className="inline-flex items-center py-2.5 px-4 text-xs font-medium text-center text-red-600 bg-primary-700 rounded-lg focus:ring-4 focus:ring-primary-200  hover:bg-primary-800"
                       >
                         Post comment
                       </button>
                     </form>
-                    <article className="p-6 text-base bg-white rounded-lg dark:bg-gray-900">
+                    <article className="p-6 text-base bg-white rounded-lg ">
                       <footer className="flex justify-between items-center mb-2">
                         <div className="flex items-center">
-                          <p className="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white font-semibold">
+                          <p className="inline-flex items-center mr-3 text-sm text-gray-900  font-semibold">
                             <img
                               className="mr-2 w-6 h-6 rounded-full"
                               src="https://flowbite.com/docs/images/people/profile-picture-2.jpg"
@@ -143,7 +143,7 @@ const Product = () => {
                             />
                             Hamza Talha
                           </p>
-                          <p className="text-sm text-gray-600 dark:text-gray-400">
+                          <p className="text-sm text-gray-600 ">
                             <time
                               dateTime="2022-02-08"
                               title="February 8th, 2022"
@@ -155,7 +155,7 @@ const Product = () => {
                         <button
                           id="dropdownComment1Button"
                           data-dropdown-toggle="dropdownComment1"
-                          className="inline-flex items-center p-2 text-sm font-medium text-center text-gray-500 dark:text-gray-400 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                          className="inline-flex items-center p-2 text-sm font-medium text-center text-gray-500  bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-50"
                           type="button"
                         >
                           <svg
@@ -172,16 +172,16 @@ const Product = () => {
 
                         <div
                           id="dropdownComment1"
-                          className="hidden z-10 w-36 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600"
+                          className="hidden z-10 w-36 bg-white rounded divide-y divide-gray-100 shadow "
                         >
                           <ul
-                            className="py-1 text-sm text-gray-700 dark:text-gray-200"
+                            className="py-1 text-sm text-gray-700 "
                             aria-labelledby="dropdownMenuIconHorizontalButton"
                           >
                             <li>
                               <a
                                 href="/"
-                                className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                                className="block py-2 px-4 hover:bg-gray-100 "
                               >
                                 Edit
                               </a>
@@ -189,7 +189,7 @@ const Product = () => {
                             <li>
                               <a
                                 href="/"
-                                className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                                className="block py-2 px-4 hover:bg-gray-100 "
                               >
                                 Remove
                               </a>
@@ -197,7 +197,7 @@ const Product = () => {
                             <li>
                               <a
                                 href="/"
-                                className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                                className="block py-2 px-4 hover:bg-gray-100"
                               >
                                 Report
                               </a>
@@ -205,7 +205,7 @@ const Product = () => {
                           </ul>
                         </div>
                       </footer>
-                      <p className="text-gray-500 dark:text-gray-400">
+                      <p className="text-gray-500 ">
                         Very straight-to-point article. Really worth time
                         reading. Thank you! But tools are just the instruments
                         for the UX designers. The knowledge of the design tools
@@ -214,7 +214,7 @@ const Product = () => {
                       <div className="flex items-center mt-4 space-x-4">
                         <button
                           type="button"
-                          className="flex items-center text-sm text-gray-500 hover:underline dark:text-gray-400 font-medium"
+                          className="flex items-center text-sm text-gray-500 hover:underline  font-medium"
                         >
                           <svg
                             className="mr-1.5 w-3.5 h-3.5"
@@ -239,7 +239,69 @@ const Product = () => {
                 </section>
               </div>
               <div className={openTab === 2 ? 'block' : 'hidden'}>
-                React JS with Tailwind CSS Tab 2 Content show
+                <div className="desc">
+                  <p className="order-1">
+                    Seller assumes all responsibility for this listing.
+                  </p>
+                  <p className="order-3">
+                    Last updated on Oct 09, 2023 13:30:57 PDTView all revisions
+                  </p>
+                  <p className="order-2">eBay item number:193639233725</p>
+                </div>
+                <div className="mt-8">
+                  <div className="mb-4">
+                    <h2 className="text-lg lg:text-2xl font-bold text-gray-900 ">
+                      Item specifics
+                    </h2>
+                  </div>
+                  <div className="flex justify-between">
+                    <div className="max-w-[50%]">
+                      <p className="font-semibold">
+                        Condition:
+                        <span className="text-sm font-thin ml-2">
+                          Open box: An item in excellent, new condition with no
+                          wear. The item may be missing the original
+                        </span>
+                      </p>
+                      <p className="font-semibold">
+                        Brand:
+                        <span className="text-sm font-thin ml-2">
+                          Unbranded{' '}
+                        </span>
+                      </p>
+                      <p className="font-semibold">
+                        UPC:
+                        <span className="text-sm font-thin ml-2">
+                          Does not apply
+                        </span>
+                      </p>
+                      <p className="font-semibold">
+                        Model:
+                        <span className="text-sm font-thin ml-2">
+                          NFB76A05H-001 NFB74A05H-001
+                        </span>
+                      </p>
+                    </div>
+                    <div>
+                      <p className="font-semibold">
+                        Type:
+                        <span className="text-sm font-thin ml-2">Fan</span>
+                      </p>
+                      <p className="font-semibold">
+                        MPN:
+                        <span className="text-sm font-thin ml-2">
+                          929456-001 929455-001
+                        </span>
+                      </p>
+                      <p className="font-semibold">
+                        EAN:
+                        <span className="text-sm font-thin ml-2">
+                          Does not apply
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
