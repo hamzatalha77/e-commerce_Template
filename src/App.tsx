@@ -2,13 +2,14 @@ import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
 import Home from './layouts/home'
-import Cart from './components/Cart'
 import './App.css'
 import ScrollUp from './components/ScrollUp'
 import Footer from './components/Footer'
 import Shop from './layouts/shop'
 import Blog from './layouts/blog'
 import Product from './layouts/product'
+import Cart from './layouts/cart'
+import CartSide from './components/CartSide'
 
 const App = () => {
   const [isCartOpen, setIsCartOpen] = useState(false)
@@ -25,8 +26,9 @@ const App = () => {
         <Route path="/shop" element={<Shop />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/product" element={<Product />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
-      {isCartOpen && <Cart toggleCart={toggleCart} />}
+      {isCartOpen && <CartSide toggleCart={toggleCart} />}
       <ScrollUp />
       <Footer />
     </Router>

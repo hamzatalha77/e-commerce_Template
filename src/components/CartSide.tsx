@@ -1,7 +1,7 @@
 interface CartProps {
   toggleCart: () => void
 }
-const Cart: React.FC<CartProps> = ({ toggleCart }) => {
+const CartSide: React.FC<CartProps> = ({ toggleCart }) => {
   return (
     <div className="fixed bg-slate-200 z-50 w-[420px] [box-shadow:-2px_0px_4px_gray] h-full top-0 right-0 px-8 py-[3,5rem] cart">
       <i
@@ -82,4 +82,4 @@ const Cart: React.FC<CartProps> = ({ toggleCart }) => {
   )
 }
 
-export default Cart
+export default CartSide
