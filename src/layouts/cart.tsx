@@ -8,7 +8,7 @@ const Cart = () => {
   }
 
   return (
-    <section className=" relative z-10 after:contents-[''] after:absolute after:z-0 after:h-full xl:after:w-1/3 after:top-0 after:right-0 after:bg-gray-50">
+    <section className=" relative z-10 after:contents-[''] after:absolute after:z-0 after:h-full xl:after:w-1/3 after:top-0 after:right-0 ">
       <div className="w-full max-w-7xl px-4 md:px-5 lg-6 mx-auto relative z-10">
         <div className="grid grid-cols-12">
           <div className="col-span-12 xl:col-span-8 lg:pr-8 pt-14 pb-8 lg:py-24 w-full max-xl:max-w-3xl max-xl:mx-auto">
@@ -42,10 +42,7 @@ const Cart = () => {
               </div>
             </div>
             <div className="flex flex-col min-[500px]:flex-row min-[500px]:items-center gap-5 py-6 border-b border-gray-200">
-              <div className="theb">
-                <i className="bx bx-x text-2xl font-extrabold text-red-600"></i>
-              </div>
-
+              <i className="bx bx-x text-2xl font-extrabold text-red-600"></i>
               <div className="w-full md:max-w-[126px]">
                 <img
                   src="/img/cart-1.png"
@@ -90,6 +87,7 @@ const Cart = () => {
               </div>
             </div>
             <div className="flex flex-col min-[500px]:flex-row min-[500px]:items-center gap-5 py-6  border-b border-gray-200">
+              <i className="bx bx-x text-2xl font-extrabold text-red-600"></i>
               <div className="w-full md:max-w-[126px]">
                 <img
                   src="/img/cart-1.png"
@@ -134,6 +132,7 @@ const Cart = () => {
               </div>
             </div>
             <div className="flex flex-col min-[500px]:flex-row min-[500px]:items-center gap-5 py-6  border-b border-gray-200">
+              <i className="bx bx-x text-2xl font-extrabold text-red-600"></i>
               <div className="w-full md:max-w-[126px]">
                 <img
                   src="/img/cart-1.png"
@@ -185,7 +184,7 @@ const Cart = () => {
               </button>
             </div>
           </div>
-          <div className=" col-span-12 xl:col-span-4 bg-gray-50 w-full max-xl:px-6 max-w-3xl xl:max-w-lg mx-auto lg:pl-8 py-24">
+          <div className=" col-span-12 xl:col-span-4  w-full max-xl:px-6 max-w-3xl xl:max-w-lg mx-auto lg:pl-8 py-24">
             <h2 className="text-base leading-10 text-black pb-8 border-b border-gray-300">
               Order Summary
             </h2>
@@ -281,56 +280,6 @@ const Cart = () => {
                       className="block w-full h-11 pr-11 pl-5 py-2.5 text-base font-normal shadow-xs text-gray-900 bg-white border border-gray-300 rounded-lg placeholder-gray-500 focus:outline-gray-400 "
                       placeholder="xxxx xxxx xxxx"
                     />
-                    <button
-                      id="dropdown-button"
-                      data-target="dropdown"
-                      className="dropdown-toggle flex-shrink-0 z-10 inline-flex items-center py-4 px-4 text-base font-medium text-center text-gray-900 bg-transparent  absolute right-0 top-0 pl-2 "
-                      type="button"
-                    >
-                      <i className="bx bx-chevron-down"></i>
-                    </button>
-                    <div
-                      id="dropdown"
-                      className="absolute top-10 right-0 z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
-                    >
-                      <ul
-                        className="py-2 text-sm text-gray-700 dark:text-gray-200"
-                        aria-labelledby="dropdown-button"
-                      >
-                        <li>
-                          <a
-                            href="/"
-                            className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                          >
-                            Shopping
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="/"
-                            className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                          >
-                            Images
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="/"
-                            className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                          >
-                            News
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="/"
-                            className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                          >
-                            Finance
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
                   </div>
                 </div>
                 <div className="flex items-center border-b border-gray-200">
