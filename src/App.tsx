@@ -32,7 +32,7 @@ const App = () => {
       </Routes>
       {isCartOpen && <CartSide toggleCart={toggleCart} />}
       <ScrollUp />
-      {/* <Footer /> */}
+      <Footer />
     </Router>
   )
 }
