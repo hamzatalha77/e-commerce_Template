@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Header from './components/Header'
+// import Header from './components/Header'
 import Home from './layouts/home'
 import './App.css'
 import ScrollUp from './components/ScrollUp'
-import Footer from './components/Footer'
+// import Footer from './components/Footer'
 import Shop from './layouts/shop'
 import Blog from './layouts/blog'
 import Product from './layouts/product'
@@ -21,7 +21,7 @@ const App = () => {
 
   return (
     <Router>
-      <Header toggleCart={toggleCart} />
+      {/* <Header toggleCart={toggleCart} /> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
@@ -32,7 +32,7 @@ const App = () => {
       </Routes>
       {isCartOpen && <CartSide toggleCart={toggleCart} />}
       <ScrollUp />
-      <Footer />
+      {/* <Footer /> */}
     </Router>
   )
 }
