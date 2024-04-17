@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-// import Header from './components/Header'
+import Header from './components/Header'
 import Home from './layouts/home'
 import './App.css'
 import ScrollUp from './components/ScrollUp'
@@ -21,7 +21,7 @@ const App = () => {
 
   return (
     <Router>
-      {/* <Header toggleCart={toggleCart} /> */}
+      <Header toggleCart={toggleCart} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
