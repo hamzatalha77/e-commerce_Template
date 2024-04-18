@@ -88,6 +88,14 @@ const Header: React.FC<HeaderProps> = ({ toggleCart }) => {
             >
               <Link to="/contact">Contact</Link>
             </li>
+            <li
+              className={`text-slate-700 font-medium text-base ${
+                activeLink === '/payment' ? 'active-link' : ''
+              }`}
+              onClick={() => handleLinkClick('/payment')}
+            >
+              <Link to="/payment">payment</Link>
+            </li>
           </ul>
           <div
             id="nav-close"

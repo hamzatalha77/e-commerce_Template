@@ -11,6 +11,7 @@ import Product from './layouts/product'
 import Cart from './layouts/cart'
 import CartSide from './components/CartSide'
 import Login from './layouts/login'
+import Payment from './layouts/payment'
 
 const App = () => {
   const [isCartOpen, setIsCartOpen] = useState(false)
@@ -21,7 +22,7 @@ const App = () => {
 
   return (
     <Router>
-      <Header toggleCart={toggleCart} />
+      {/* <Header toggleCart={toggleCart} /> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
@@ -29,10 +30,11 @@ const App = () => {
         <Route path="/blog" element={<Blog />} />
         <Route path="/product" element={<Product />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/payment" element={<Payment />} />
       </Routes>
       {isCartOpen && <CartSide toggleCart={toggleCart} />}
       <ScrollUp />
-      <Footer />
+      {/* <Footer /> */}
     </Router>
   )
 }
