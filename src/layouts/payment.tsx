@@ -115,7 +115,17 @@ const Payment = () => {
             <View
               style={tw(' bg-[#F3F4F8] w-full rounded-2xl py-4 px-2 mr-4 mt-1')}
             >
-              <Logo />
+              {/* <Image
+                style={{ width: '100px' }}
+                src={{
+                  uri: 'https://firebasestorage.googleapis.com/v0/b/my-crud-f5100.appspot.com/o/Logo.png?alt=media&token=8edc25f1-8534-4f44-93c2-5a82b5e114ae',
+                  method: 'GET',
+
+                  headers: { 'Cache-Control': 'no-cache' },
+                  body: ''
+                }}
+                cache={false}
+              /> */}
               <Table style={tw('bg-white rounded-2xl border-[#F3F4F8] mx-3')}>
                 <TH style={tw('')}>
                   <TD style={tw('text-[8.7px] text-[#6B7280] font-bold py-3')}>
@@ -166,7 +176,23 @@ const Payment = () => {
               >
                 Description du problème
               </Text>
+              <View
+                style={tw(
+                  'bg-white w-full py-14 rounded-lg border border-[#DFE4EA] mt-1'
+                )}
+              >
+                <Text style={tw('text-[10.26px] font-normal text-[#9CA3AF] ')}>
+                  Tapez le text ici
+                </Text>
+              </View>
             </View>
+          </View>
+          <View style={tw('bg-[#377DFF] w-full py-4 mt-1')}>
+            <Text
+              style={tw('text-[11.68px] font-normal text-white text-center ')}
+            >
+              Technicien
+            </Text>
           </View>
         </Page>
       </Document>
