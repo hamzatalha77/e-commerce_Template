@@ -28,7 +28,7 @@ const Product = () => {
           </div>
         </div>
         <div>
-          <p className="text-sm text-gray-600 mb-2">Woman {'>'} Jacket's </p>
+          <p className="text-sm  text-gray-600 mb-2">Woman {'>'} Jacket's </p>
           <h3 className="text-2xl font-medium mb-3 details__title">
             Windbreaker , Denim - Jacket
           </h3>
