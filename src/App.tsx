@@ -12,6 +12,7 @@ import Cart from './layouts/cart'
 import CartSide from './components/CartSide'
 import Login from './layouts/login'
 import Payment from './layouts/payment'
+import Pdf from './layouts/pdf'
 
 const App = () => {
   const [isCartOpen, setIsCartOpen] = useState(false)
@@ -31,6 +32,7 @@ const App = () => {
         <Route path="/product" element={<Product />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/payment" element={<Payment />} />
+        <Route path="/pdf" element={<Pdf />} />
       </Routes>
       {isCartOpen && <CartSide toggleCart={toggleCart} />}
       <ScrollUp />
