@@ -51,10 +51,6 @@ const styles = StyleSheet.create({
     fontSize: 14,
     textAlign: 'justify',
     fontFamily: 'Times-Roman'
-  },
-  image: {
-    marginVertical: 15,
-    marginHorizontal: 100
   }
 })
 const Pdf = () => {
