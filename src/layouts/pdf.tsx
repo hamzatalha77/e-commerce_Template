@@ -9,6 +9,7 @@ import {
   Font
 } from '@react-pdf/renderer'
 import { createTw } from 'react-pdf-tailwind'
+
 import { Table, TR, TH, TD } from '@ag-media/react-pdf-table'
 const tw = createTw({
   theme: {
@@ -54,21 +55,6 @@ const styles = StyleSheet.create({
   image: {
     marginVertical: 15,
     marginHorizontal: 100
-  },
-  header: {
-    fontSize: 12,
-    marginBottom: 20,
-    textAlign: 'center',
-    color: 'grey'
-  },
-  pageNumber: {
-    position: 'absolute',
-    fontSize: 12,
-    bottom: 30,
-    left: 0,
-    right: 0,
-    textAlign: 'center',
-    color: 'grey'
   }
 })
 const Pdf = () => {
@@ -87,7 +73,7 @@ const Pdf = () => {
             Demandeur
           </Text>
         </View>
-        <View style={tw(' w-full px-2 my-1')}>
+        <View style={tw('w-full px-2 my-1')}>
           <View style={tw(' bg-[#F3F4F8] w-full rounded-2xl py-4 px-1 my-1')}>
             <View style={tw('pb-1 pt-1')}>
               <Svg
@@ -147,7 +133,7 @@ const Pdf = () => {
             </View>
 
             <Table style={tw('bg-white rounded-2xl border-[#F3F4F8]')}>
-              <TH style={tw('')}>
+              <TH>
                 <TD
                   style={tw(
                     'text-[8.7px] text-[#6B7280] font-bold py-3 pl-3 border-r-[#FFFFFF]'
@@ -178,7 +164,7 @@ const Pdf = () => {
                 </TD>
               </TH>
 
-              <TR style={tw('')}>
+              <TR>
                 <TD
                   style={tw(
                     'text-[8.7px] text-[#6B7280] font-normal py-3 pl-3 border-r-[#FFFFFF]'
@@ -211,13 +197,13 @@ const Pdf = () => {
             </Table>
           </View>
         </View>
-        <View style={tw(' w-full my-1 px-2')}>
+        <View style={tw('w-full my-1 px-2')}>
           <View
-            style={tw(' bg-[#F3F4F8] w-full rounded-2xl py-4 px-2 mr-4 mt-1')}
+            style={tw('bg-[#F3F4F8] w-full rounded-2xl py-4 px-2 mr-4 mt-1')}
           >
             <Text
               style={tw(
-                'text-[8.7px] font-bold text-[#6B7280] text-center  mb-3'
+                'text-[8.7px] font-bold text-[#6B7280] text-center mb-3'
               )}
             >
               Description du problème
@@ -234,16 +220,14 @@ const Pdf = () => {
           </View>
         </View>
         <View style={tw('bg-[#377DFF] w-full py-4 mt-1')}>
-          <Text
-            style={tw('text-[11.68px] font-normal text-white text-center ')}
-          >
+          <Text style={tw('text-[11.68px] font-normal text-white text-center')}>
             Technicien
           </Text>
         </View>
-        <View style={tw(' w-full mt-1 px-2')}>
-          <View style={tw(' bg-[#F3F4F8] w-full rounded-2xl py-4 px-1 mt-1')}>
+        <View style={tw('w-full mt-1 px-2')}>
+          <View style={tw('bg-[#F3F4F8] w-full rounded-2xl py-4 px-1 mt-1')}>
             <Table style={tw('bg-white rounded-2xl border-[#F3F4F8]')}>
-              <TH style={tw('')}>
+              <TH>
                 <TD
                   style={tw(
                     'text-[8.7px] text-[#6B7280] font-bold py-3 pl-3 border-r-[#FFFFFF]'
@@ -274,7 +258,7 @@ const Pdf = () => {
                 </TD>
               </TH>
 
-              <TR style={tw('')}>
+              <TR>
                 <TD
                   style={tw(
                     'text-[8.7px] text-[#6B7280] font-normal py-12 pl-3 border-l-[#FFFFFF] border-r-[#FFFFFF]'
@@ -306,14 +290,14 @@ const Pdf = () => {
               </TR>
             </Table>
             <Table style={tw('bg-white rounded-2xl border-[#F3F4F8] mt-2')}>
-              <TH style={tw('')}>
+              <TH>
                 <TD
                   style={tw('text-[8.7px] text-[#6B7280] font-bold py-3 pl-3')}
                 >
                   Commentaire technicien
                 </TD>
               </TH>
-              <TR style={tw('')}>
+              <TR>
                 <TD
                   style={tw(
                     'text-[8.7px] text-[#6B7280] font-normal py-3 pl-3'
@@ -325,14 +309,14 @@ const Pdf = () => {
               </TR>
             </Table>
             <Table style={tw('bg-white rounded-2xl border-[#F3F4F8] mt-2')}>
-              <TH style={tw('')}>
+              <TH>
                 <TD
                   style={tw('text-[8.7px] text-[#6B7280] font-bold py-3 pl-3')}
                 >
                   Commentaire Client
                 </TD>
               </TH>
-              <TR style={tw('')}>
+              <TR>
                 <TD
                   style={tw(
                     'text-[8.7px] text-[#6B7280] font-normal py-3 pl-3'
@@ -370,7 +354,7 @@ const Pdf = () => {
               Signature Client
             </Text>
             <Text
-              style={tw('text-[8.95px] font-bold text-black text-center mx-3 ')}
+              style={tw('text-[8.95px] font-bold text-black text-center mx-3')}
             >
               Farid koman
             </Text>
