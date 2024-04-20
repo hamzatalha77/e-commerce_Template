@@ -25,28 +25,6 @@ Font.register({
   src: 'https://fonts.gstatic.com/s/oswald/v13/Y_TKV6o8WovbUd3m_X9aAA.ttf'
 })
 
-const styles = StyleSheet.create({
-  body: {
-    paddingTop: 35,
-    paddingBottom: 65,
-    paddingHorizontal: 35
-  },
-  title: {
-    fontSize: 24,
-    textAlign: 'center',
-    fontFamily: 'Oswald'
-  },
-  author: {
-    fontSize: 12,
-    textAlign: 'center',
-    marginBottom: 40
-  },
-  subtitle: {
-    fontSize: 18,
-    margin: 12,
-    fontFamily: 'Oswald'
-  }
-})
 const Pdf = () => {
   return (
     <Document>
