@@ -45,12 +45,6 @@ const styles = StyleSheet.create({
     fontSize: 18,
     margin: 12,
     fontFamily: 'Oswald'
-  },
-  text: {
-    margin: 12,
-    fontSize: 14,
-    textAlign: 'justify',
-    fontFamily: 'Times-Roman'
   }
 })
 const Pdf = () => {
