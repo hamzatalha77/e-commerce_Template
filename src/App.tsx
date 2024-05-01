@@ -21,7 +21,7 @@ const App = () => {
 
   return (
     <Router>
-      {/* <Header toggleCart={toggleCart} /> */}
+      <Header toggleCart={toggleCart} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
@@ -32,7 +32,7 @@ const App = () => {
       </Routes>
       {isCartOpen && <CartSide toggleCart={toggleCart} />}
       <ScrollUp />
-      {/* <Footer /> */}
+      <Footer />
     </Router>
   )
 }
