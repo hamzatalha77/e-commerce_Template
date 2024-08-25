@@ -484,3 +484,13 @@ input {
     grid-template-columns: 1fr;
   }
 }
+.accordion-open .questions__header,
+.accordion-open .questions__content {
+  background-color: var(--first-color);
+}
+
+.accordion-open .questions__item-title,
+.accordion-open .questions__description,
+.accordion-open .questions__icon {
+  color: #fff;
+}
